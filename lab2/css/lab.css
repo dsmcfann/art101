@@ -18,8 +18,8 @@ p {
   min-height: 75px;
   padding: 10px;
   margin: 10px;
-  border: dotted 15px #000000
-  font-size 20px
+  border: dotted 50px #000000;
+  font-size: 20px;
 }
 
 #paragraph {
@@ -28,7 +28,7 @@ p {
   min-height: 75px;
   padding: 10px;
   margin: 10px;
-  border: dotted 15px #000000
-  font-size 20px
+  border: dotted 50px #000000;
+  font-size: 20px;
 
 }
