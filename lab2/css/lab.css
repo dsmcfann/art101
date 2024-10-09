@@ -14,10 +14,21 @@ p {
 
 #content {
   background-color: #baa44f;
+  width: 250px;
+  min-height: 75px;
+  padding: 10px;
+  margin: 10px;
+  border: dotted 1px #000000
+  font-size 20px
+}
+
+#paragraph {
+  background-color: #d44abf;
   width: 100px;
   min-height: 75px;
   padding: 10px;
   margin: 10px;
-  border: solid 1px #000000
+  border: dotted #000000
   font-size 20px
+
 }
