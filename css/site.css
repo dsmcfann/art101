@@ -8,8 +8,9 @@ body {
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
+h1{
   font-family: 'Times New Roman', Times, serif;
+  color: white;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -19,23 +20,52 @@ h1 {
   font-size: 200%;
 }
 
+
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #907a90;
-  background-color: #eac1de;
+  border: dotted 5px #907a90;
 }
 
+
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #edc6e9;
-}
 
 #links {
   font-family: 'Times New Roman', Times, serif;
   
+}
+
+/*okay, this should be the CSS for the left side of the page, it will show the links to labs. */
+#westside {
+  width: 300px;
+  background-color: hsl(0, 0%, 0%);
+  border: 1px solid #ff668a;
+  height: fit-content;
+  align-content: left;
+}
+
+/*the below code was taken from w3 schools, with some minor changes. I've included information about what each of these do.*/
+ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #1c0101;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #640000;
 }

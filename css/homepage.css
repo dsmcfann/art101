@@ -2,5 +2,43 @@
 
 .image-photo {
   margin: 10px;
-  max-width: 500px;
+  max-width: 300px;
+}
+
+
+.subheadingtitle {
+  padding: 20px;
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ff668a;
+  padding: 3px;
+}
+
+#minor-section {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #362404;
+  border: 1px solid #ff668a;
+  color: rgb(208, 208, 208)
+}
+
+b1 {
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  font-size: 200%;
+}
+
+i1 {
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-size: 50%;
 }
