@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 4 - Pseudocoding and Problem-Solving </title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -20,33 +20,138 @@
 	<script type="text/javascript" src="./js/lab.js" DEFER></script>
 </head>
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+
+	
+	<div id="westside" > <!-- This is the code for the navigation "bar" - updated 10/14. -->
+		<h1 style="text-align: center;"> <a href=https://dsmcfann.github.io/art101> Welcome, weary traveller. </a> </h1>
+		<nav id="links">
+			<!-- Put links to labs here. -->
+			<ul>
+				<li><a href="https://dsmcfann.github.io/art101/lab2/index.html"> Lab 2: Better than Lab One! </a> </li>
+				<li><a href="https://dsmcfann.github.io/art101/lab3/index.html"> Lab 3: File Structure and File Transfer</a> </li>
+				<li><a href="https://dsmcfann.github.io/art101/lab4/index.html"> Lab 4: Pseudocoding and Problem-Solving</a> </li>
+				<li><a href="https://dsmcfann.github.io/art101/lab5/index.html"> Lab 5: insert title</a> </li>
+				<li><a href="https://dsmcfann.github.io/art101/lab6/index.html"> Lab 6: insert title</a> </li>
+			</ul>
+		</nav>
+	</div>
+
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
+			<h1>Lab 4 - Pseudocoding and Problem-Solving </h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p> In this lab, we needed to use psuedocode to describe both an everyday task, as well as the steps to playing a game. </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p> Creating the psuedocode was not a major problem, either for myself or my lab partner. The issue, however, was during Task One. As I tried to create an ordered list to list the steps for taking the bus, the appearance on my website kept look awful. It looked almost like how a typewriter looks when it types over itself. I only fixed it by removing the some css from site.css which previously created a more aesthetically pleasing navigation bar. </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p> Doing this lab allowed me to practice pseudocode, something that I thought I would be very bad at. In the end, I still think I have a lot to learn about how to break down the tasks into subtasks... but I'm learning! </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
-					<div id="output"></div>
-			</div>
+						<p> <b>Task One: Pseudocode an Everyday Task. For this, we decided to talk about how to get to the BayTree Bookstore from the Porter/Rachel Carson Bus Stop.  </b></p>
+						<ol type="1">
+							<li> Be present at the Rachel Carson/Porter Bus Stop. </li>
+							<li> Watch towards the left for oncoming cars and busses. Wait until you see either a loop bus or a Santa Cruz Metro City bus.
+								<ol> 
+									<li> If the bus is a Santa Cruz Metro bus, take out your student ID. </li>
+								</ol>
+							</li>
+							<li> When the bus arrives at the bus stop, get into a line with all other students waiting to board the bus. </li>
+							<li> Board the bus with the other students.
+								<ol>
+									<li> If on a Santa Cruz Metro Bus, show bus driver your student ID. </li>
+								</ol>
+							</li>
+							<li> Find a seat on the bus. </li>
+								<ol>
+									<li> Walk to an open seat. </li>
+									<li> Sit down in the seat. </li>
+									<li> If no other seats are available... 
+									
+									 	<ol>
+											<li> Find an open space to stand. </li>
+											<li> Grab onto a handle in the bus, and hold on. </li>
+										</ol>
+										</li>
+								</ol>
+							</li>
+							<li> Remain on the bus for 5 stops. </li>
+							<li> After the bus leaves from the College 9/10 stop, reach up your hand and pull the stop cord. 
+								<ol> 
+									<li> Wait for the bus to stop at Hagar Dr. </li>
+									<li> Get off bus when bus stops. </li>
+								</ol> </li>
+							<li> Facing the bus stop, turn to your right and walk across the street. 
+								<ol>
+									<li> Continue to walk forward. </li>
+									<li> When you walk to the middle of the square, turn to the left. </li>
+									<li> Look at the sign that says Baytree Bookstore. </li>
+								</ol> </li>
+							<li> Walk into the open door of the Baytree Bookstore. </li>
+						</ol>
+					<p> <b> Task Three: Pseudocode for a game. See what the code looks like below! </b></p>
+
+<pre><code> 
+// Sticks
+// Practicing with Pseudocode!
+// Donovan and Mason 
+// October 2024
+							
+	//Create Visual gameboard
+		//At start, draw two hands. fingers = points. each hand has one finger displayed at start of game.
+		//Without telling player, assign “points”. at start of game, each player has two “points”.
+	//First Player Moves (two possibilities)
+		//Attack: Player chooses one of their hands
+			//and chooses one of their opponent’s “hands” to attack]
+		//Split
+			//Player chooses one of their hands and chooses how many points to to move from one hand to their other. ex hand1 has 4 points, hand 2 has 1, player “splits” and moves two points from hand 1 to hand 2.
+			  //Can not split points to be more than five per hand ie can not force their own hand from play.
+			  //Can not split points to dead hand.
+	//Validate move
+		//If attack, add numerical value of fingers displayed from player's hand to opponent’s hand. ie, if player’s hands = x, and opponent’s hand equals y, add x and y to create new hand for opponent.
+			//If points for opponents hand equal or above 5, stop counting and remove hand from play.
+		//If split, subtract chosen numerical value of points from one hand and add to the other hand.
+			//If points on one hand equals or exceeds or exceed 5, return error and
+				//Go back to step 2
+	//Redraw gameboard to match current points
+		//Display for both opponents
+		//If numerical value on either players hand equals or exceeds 5 at end of turn, stop counting and remove hand from play.
+	//Test for win condition
+		  //If one players points at or above 10, end game. other player is declared winner]
+			//Else, move to next player
+	  
+	// Second Player Moves (two possibilities)
+		//Attack: Player chooses one of their hands
+			//and chooses one of their opponent’s “hands” to attack]
+		//Split
+			//Player chooses one of their hands and chooses how many points to to move from one hand to their other. ex hand1 has 4 points, hand 2 has 1, player “splits” and moves two points from hand 1 to hand 2.
+			  //Can not split points to be more than five per hand ie can not force their own hand from play.
+			  //Can not split points to dead hand.
+	//Validate move
+		//If attack, add numerical value of fingers displayed from player's hand to opponent’s hand. ie, if player’s hands = x, and opponent’s hand equals y, add x and y to create new hand for opponent.
+			//If points for opponents hand equal or above 5, stop counting and remove hand from play.
+		//If split, subtract chosen numerical value of points from one hand and add to the other hand.
+			//If points on one hand equals or exceeds or exceed 5, return error and
+				//Go back to step 2
+	//Redraw gameboard to match current points
+		//Display for both opponents
+		//If numerical value on either players hand equals or exceeds 5 at end of turn, stop counting and remove hand from play.
+	//Test for win condition
+		  //If one players points at or above 10, end game. other player is declared winner]
+			//Else, move to next player	
+
+						</code></pre>
+					</div>
+			
 		</section>
-		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
-		</nav>
 	</main>
 </body>
 </html>

@@ -45,8 +45,11 @@ h1 {
   align-content: left;
 }
 
-/*the below code was taken from w3 schools, with some minor changes. I've included information about what each of these do.*/
-ul {
+/*the below code was taken from w3 schools, with some minor changes. I've included information about what each of these do.*
+
+This was messing up my Lab 4. I don't know why, but so I can turn this in on time I have removed it./
+
+/*ul {
   list-style-type: none;
   margin: 5px;
   padding: 5px;
