@@ -48,7 +48,7 @@ h1 {
 
 
 /*the below code was taken from w3 schools, with some minor changes. I've included information about what each of these do.*/
-/* this is the css code for the navigation bar. im doing some tweaking on it to make it function using javascript.
+
 ul{
   list-style-type: none;
   margin: 5px;
@@ -57,9 +57,6 @@ ul{
   background-color: #1c0101;
 }
 
-li {
-  float: left;
-}
 
 li a {
   display: block;

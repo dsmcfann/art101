@@ -16,7 +16,7 @@ main();
 
 
 // A Simple Javascript Program for Lab 5
-// Author: Donovan Sayegh-McFann
+// Author: Donovan Sayegh-McFann (dmcfann@ucsc.edu)
 // Created: 10/21/24
 // License: Public Domain
 // (though frankly I'm not sure why you'd want to use this code anyway)
