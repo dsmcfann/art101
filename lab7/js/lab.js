@@ -38,8 +38,7 @@ function askTravelName () {
   // I followed the code showed by Wes. He put the var and the the console log in two lines, and so shall I!
     // hypotehtically though I could have written the following to be one line:
     // userName.toLower().split("").sort().join("")
-  return tNameSorted
-   
+   return tNameSorted;
 }
 
 
