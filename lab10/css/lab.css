@@ -1,0 +1,52 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #DDD8C4;
+  }
+
+
+
+.text p {
+    display: inline-block;
+    max-width: 60%;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    text-align: left
+}
+
+#output {
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 1px black;
+    min-height: 100px;
+  }
+
+
+/* the :nth-child() selector selects child elements according to their position. */
+/* lots of different notations you can do - the parenthesis contain the number or an equation to get the number.*/
+/* so, to make the text go from left to right - based on odd or even. */
+
+/* .text:nth-child(odd) {
+    text-align: left;
+  }
+  
+.text:nth-child(odd) p {
+    background-color: rgb(103, 4, 4);
+    color: rgb(255, 255, 255);
+  }
+  
+.text:nth-child(even) {
+    text-align: right;
+    color: whitesmoke
+  } */

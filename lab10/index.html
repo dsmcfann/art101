@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab 9 - Libraries and jQuery </title>
+	<title>Lab 10 - Javascript for the Web</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -16,14 +16,16 @@
 	
 	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
 	<script
-			  src="https://code.jquery.com/jquery-3.7.1.min.js"
-			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-			  crossorigin="anonymous"></script>
-
+		src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous">
+	</script>	
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script type="text/javascript" src="./js/lab.js" DEFER></script>
 </head>
 <body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	
 	
 	<!--  Navigation Bar Code, taken liberally from W3 schools and changed slightly for my own purposes. -->
 	<div id="westside" >
@@ -48,27 +50,30 @@
 	
 	<main id="content">
 		<section>
-			<h1>Lab 9 - Libraries and jQuery</h1>
-			<div id ="challenge", class = "minor-section">
-						<h2> Challenge</h2>
-						<p>For this lab, we were needed to utilize jQuery for the first time. We appended buttons to our HTML, and created code that caused some colors to change when a button is pressed.</p>
+			<h1>Lab 10 - Javascript for the Web </h1>
+			<div class="minor-section">
+					<h2> Challenge</h2>
+					<p> For this lab, we were asked to create a JavaScript/jQuery script that appends new elements to an output div.</p>
 			</div>
 
-			<div id ="problems", class = "minor-section">
+			<div class="minor-section">
 					<h2>Problems</h2>
-					<p> Surprisingly, I had few problems with the Javascript syntax like I did in previous labs. However, I did struggle with making the buttons function as they should. I ended up needing to look over the example from Wes' website, as well as check W3 schools, to see what I was doing wrong. </p>
+					<p> Few problems arose with the main tasks of the lab, but we found some difficulties solving Task X. Eventually, we were successfully able to solve those problems. </p>
 			</div>
 
-			<div id ="reflections", class = "minor-section">
+			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p> Overall, I think this went really well! I even later went on to edit down my Javascript to be just four lines of code. I was also considering implementing something Wes' website had, with a "party button." </p>
+					<p> I really enjoyed this assignment! It also gave me the chance to explore the world of the Arcane Wizard Donovan a little further. See below. </p>
 			</div>
 
-			<div id ="results", class = "minor-section">
-					<h2>Results</h2>
-					<div id="output">
-						<p> Read em and weep, cowboy! Click the buttons and see what happens! </p>
-					</div>
+			<div class="minor-section">
+					<h2>Slowly, slowly, you make your way up the wizard's tower...</h2>
+					<p> You open an unlocked wooden door. Inside, a table atop which sits a ... device? ... crafted of metal and glass. Next to it, a writing implement and instructions: </p>
+					<p> <i> I wish to share my arcane secrets with the world. Please, ask me something, and I'll be happy to find a spell that should solve your problems...</i></p>
+					<p> I mean, what's the worse that could happen, right? Try typing something in and see what the wizard responds with. It's an old tablet, so the wizard may take a moment to respond.</p>
+					<div id="output"> </div>
+  						<input id="meTalk" name="meTalk" placeholder="speak to me...">
+  						<button id="button">Commit to Wizard.</button>
 			</div>
 		</section>
 

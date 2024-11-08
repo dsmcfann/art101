@@ -59,7 +59,6 @@ main();
 
 
 // practicing how to do this all in only four lines. also practicing it from the start.
-// also redoing the entireity of the code with new comments and such
 
 // lab.js - Simple Javascript/jQuery script
 // Requirements - Need to have jQuery.
