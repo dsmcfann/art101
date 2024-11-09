@@ -62,5 +62,26 @@ $("#button").click(function() {
   else {
     alert("The wizard's voice echoes in your head, sneering: 'Nothing? You give me nothing? I pity you who refuses to live.'");
   }
+  
 });
 
+// this is very silly, but this is a function that monitors the number of divs created on the page.
+// the idea is that if you make more than 10, it will give you an alert and toggleClass.
+
+// function. checks the div count everytime we click.
+$("#button").click(function() {
+// counts the number of divs.
+ var spellsCast = $('div.text').length;
+ // logging the results.
+ console.log('Number of spells cast: ' + spellsCast);
+ // if number of divs equals or is above a certain number... 
+ if (spellsCast > 2) {
+  // alert (whatever!)
+  alert ("You should have been very careful with touching a wizards spellbook. As the final spell appears on the page, the room as you know it begins to fade away.");
+  // remove all paragraph text from webpage.
+  $("p").remove();
+    // toggleClass of the minor section to be different.
+  $(".minor-section").toggleClass("run").append("<b> <i> RUNRUNRUNRUNRUNRUNRUNRUNRUNRUN!! <b> <i>");
+
+ };
+});

@@ -32,6 +32,14 @@
     min-height: 100px;
   }
 
+.run {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #7b1d1d;
+  background-color: #000000;
+  color: white
+
+}
 
 /* the :nth-child() selector selects child elements according to their position. */
 /* lots of different notations you can do - the parenthesis contain the number or an equation to get the number.*/
