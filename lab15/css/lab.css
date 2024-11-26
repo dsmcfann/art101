@@ -7,3 +7,16 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+ button {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+
+ } 
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+

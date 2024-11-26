@@ -28,12 +28,8 @@ main();
 $("#activate").click(function() {
   $.ajax({
   // The URL for the request (from the api docs)
-  url: "https://pokeapi.co/api/v2/pokedex/2/",
+  url: "https://www.dnd5eapi.co/api/spells/contact-other-plane",
   // The data to send (will be converted to a query string)
-  data: { 
-          // here is where any data required by the api 
-          //   goes (check the api docs)
-  },
   // Whether this is a POST or GET request
   type: "GET",
   // The type of data we expect back
@@ -41,14 +37,15 @@ $("#activate").click(function() {
 
       // What do we do when the api call is successful
     //   all the action goes in here
-    success: function(data) {
+    success: function(result) {
       // do stuff
-      console.log(data);
-      $("#output").append("<h1>" + JSON.stringify(data.pokemon_entries));
+      console.log(result);
+      $("#output").append("<p> As you <i> click </i> the sigil, a red light begins to glow around you. Suddenly, a great pain splitting your entire body. Your eyes roll involuntarily to the back of your head, and you become witness to the threads that make up the universe..." + "<br> <br>" + JSON.stringify(result.name) + "<br>" + JSON.stringify(result.desc) + "<br>" + "</p>");
   },
     // What we do if the api call fails
     error: function (jqXHR, textStatus, errorThrown) { 
       // do stuff
       console.log("Error:", textStatus, errorThrown);
+      $("#output").append("<p> You touch the sigil. You immediately explode into ten thousand pieces, because the API databank broke and no one was there to fix it. Sorry! </p>")
   },
   })})
