@@ -40,7 +40,7 @@ $("#activate").click(function() {
     success: function(result) {
       // do stuff
       console.log(result);
-      $("#output").append("<p> As you <i> click </i> the sigil, a red light begins to glow around you. Suddenly, a great pain splitting your entire body. Your eyes roll involuntarily to the back of your head, and you become witness to the threads that make up the universe..." + "<br> <br>" + JSON.stringify(result.name) + "<br>" + JSON.stringify(result.desc) + "<br>" + "</p>");
+      $("#output").append("<p> As you <i> click </i> the sigil, a red light begins to glow around you. Suddenly, a great pain splitting your entire body. Your eyes roll involuntarily to the back of your head, and you become witness to the threads that make up the universe..." + "<br> <br>" + result.name + "<br>" + result.desc + "<br>" + "</p>");
   },
     // What we do if the api call fails
     error: function (jqXHR, textStatus, errorThrown) { 
